@@ -376,13 +376,13 @@
  },
  "local": {
   "tokens": {
-   "2026-11-07": 259389420
+   "2026-11-07": 263331362
   },
   "longestTaskMinutes": 175
  },
  "stats": {
   "lifetimeTokens": "8.6B",
-  "todayTokens": "259,389,420",
+  "todayTokens": "263,331,362",
   "peakTokens": "1.1B",
   "longestTask": "16h 20m",
   "longestStreak": "20 days",

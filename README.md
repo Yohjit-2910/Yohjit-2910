@@ -39,8 +39,8 @@ I'm a **Data & AI Engineer** in Melbourne. I build the pipelines, cloud plumbing
 <br>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/codex-dark.svg?v=64fdb82f9855b0dc">
-  <img alt="Codex activity: usage totals and daily activity" src="assets/codex-light.svg?v=64fdb82f9855b0dc" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/codex-dark.svg?v=a115b377ce40aa56">
+  <img alt="Codex activity: usage totals and daily activity" src="assets/codex-light.svg?v=a115b377ce40aa56" width="100%">
 </picture>
 
 <br>
