@@ -38,6 +38,13 @@ I'm a **Data & AI Engineer** in Melbourne. I build the pipelines, cloud plumbing
 
 <br>
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/codex-dark.svg">
+  <img alt="Codex activity: lifetime tokens 8.3B, peak tokens 1.1B, longest task 16h 20m, longest streak 20 days, current streak 5 days" src="assets/codex-light.svg" width="100%">
+</picture>
+
+<br>
+
 ### Things I've built
 
 <p align="center">
