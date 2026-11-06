@@ -47,6 +47,8 @@ As of **7 November 2026**: approximately **8.6 billion tokens** in total, includ
   <img alt="Codex activity: usage totals and daily activity" src="assets/codex-light.svg?v=a115b377ce40aa56" width="100%">
 </picture>
 
+*My rubber duck has been promoted to AI engineer. 🦆🤖*
+
 <br>
 
 ### Things I've built
