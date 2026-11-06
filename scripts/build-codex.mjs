@@ -1,6 +1,6 @@
 // Renders the "Codex activity" card from data/codex.json.
 // Usage: node scripts/build-codex.mjs   (run from the repo root)
-import { readFileSync, writeFileSync } from "node:fs";
+import { readFileSync, writeFileSync, existsSync } from "node:fs";
 
 const data = JSON.parse(readFileSync("data/codex.json", "utf8"));
 
@@ -88,3 +88,11 @@ function render(t) {
 
 for (const [mode, t] of Object.entries(THEMES)) writeFileSync(`assets/codex-${mode}.svg`, render(t));
 console.log("wrote assets/codex-{dark,light}.svg");
+
+// Give the images a new URL on each update (?v=date) so browsers and caches
+// can't keep showing an old copy.
+if (existsSync("README.md")) {
+  const readme = readFileSync("README.md", "utf8");
+  const next = readme.replace(/assets\/codex-(dark|light)\.svg(\?v=[\w-]*)?/g, `assets/codex-$1.svg?v=${data.updated}`);
+  if (next !== readme) writeFileSync("README.md", next);
+}

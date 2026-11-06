@@ -66,6 +66,11 @@ const fmtMinutes = (m) => { m = Math.round(m); const h = Math.floor(m / 60); ret
 const level = (t) => LEVELS.reduce((l, th, i) => (t >= th ? i + 1 : l), 0);
 const addDays = (iso, n) => { const d = new Date(iso + "T00:00:00Z"); d.setUTCDate(d.getUTCDate() + n); return d.toISOString().slice(0, 10); };
 
+const git = (...a) => execFileSync("git", a, { encoding: "utf8" }).trim();
+// Get the latest version first (including any script updates), so our commit
+// never conflicts with changes made on GitHub.
+if (!DRY) git("pull", "--rebase", "--autostash", "--quiet");
+
 // ---- Read logs ----
 const logs = findLogs(join(CODEX_HOME, "sessions"));
 findLogs(join(CODEX_HOME, "archived_sessions"), logs);
@@ -115,11 +120,10 @@ if (DRY) { console.log("Dry run: not committing."); process.exit(0); }
 // ---- Commit and push ----
 // Committed as an unlinked "Codex sync" author, so these automatic updates
 // do NOT add squares to your GitHub contribution graph.
-const git = (...a) => execFileSync("git", a, { encoding: "utf8" }).trim();
-git("add", DATA, "assets/codex-dark.svg", "assets/codex-light.svg");
-if (!git("status", "--porcelain", "--", DATA, "assets")) { console.log("No changes."); process.exit(0); }
+const FILES = [DATA, "assets/codex-dark.svg", "assets/codex-light.svg", "README.md"];
+git("add", ...FILES);
+if (!git("status", "--porcelain", "--", ...FILES)) { console.log("No changes."); process.exit(0); }
 git("-c", "user.name=Codex sync", "-c", "user.email=codex-sync@localhost", "commit", "-m", `Update Codex activity (${today})`);
 if (NO_PUSH) process.exit(0);
-try { git("pull", "--rebase", "--quiet"); } catch {}
 git("push");
 console.log("Pushed to GitHub.");
