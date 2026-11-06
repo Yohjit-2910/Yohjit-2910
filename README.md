@@ -38,12 +38,9 @@ I'm a **Data & AI Engineer** in Melbourne. I build the pipelines, cloud plumbing
 
 <br>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/codex-dark.svg?v=a115b377ce40aa56">
-  <img alt="Codex activity: usage totals and daily activity" src="assets/codex-light.svg?v=a115b377ce40aa56" width="100%">
-</picture>
+### Codex usage
 
-<br>
+As of **7 November 2026**: approximately **8.6 billion tokens** in total, including **263,331,362 tokens** today. This is a usage snapshot based partly on local logs.
 
 ### Things I've built
 
