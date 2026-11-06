@@ -1,11 +1,11 @@
 {
  "source": "Codex profile (@mf4myc4hnv)",
- "updated": "2026-11-06",
+ "updated": "2026-11-07",
  "baseline": {
   "date": "2026-11-06",
   "note": "Snapshot of the Codex profile page; days after this date come from local Codex logs.",
-  "lifetimeTokens": 8300000000.0,
-  "peakTokens": 1100000000.0,
+  "lifetimeTokens": 8300000000,
+  "peakTokens": 1100000000,
   "longestTaskMinutes": 980,
   "longestStreak": 20,
   "levels": {
@@ -375,15 +375,17 @@
   }
  },
  "local": {
-  "tokens": {},
-  "longestTaskMinutes": 0
+  "tokens": {
+   "2026-11-07": 200163300
+  },
+  "longestTaskMinutes": 175
  },
  "stats": {
-  "lifetimeTokens": "8.3B",
+  "lifetimeTokens": "8.5B",
   "peakTokens": "1.1B",
   "longestTask": "16h 20m",
   "longestStreak": "20 days",
-  "currentStreak": "5 days"
+  "currentStreak": "6 days"
  },
  "levels": {
   "2025-11-09": 0,
@@ -748,6 +750,7 @@
   "2026-11-03": 4,
   "2026-11-04": 4,
   "2026-11-05": 4,
-  "2026-11-06": 2
+  "2026-11-06": 2,
+  "2026-11-07": 3
  }
 }
