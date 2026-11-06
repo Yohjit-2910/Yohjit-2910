@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="150" viewBox="0 0 1280 150" role="img" aria-label="~25% monthly cloud cost cut moving VMs to managed Azure services; 2023 National iAward winner with Project Echo, as HMI team lead; Springer published co-author IoT smart restaurant system; Honours B. Software Engineering Deakin University, AI major">
+  <defs><linearGradient id="g" gradientUnits="userSpaceOnUse" x1="20" y1="0" x2="200" y2="0"><stop offset="0" stop-color="#ff7a59"/><stop offset="0.55" stop-color="#a855f7"/><stop offset="1" stop-color="#22d3ee"/></linearGradient></defs>
+  <g transform="translate(0,0)">
+      <rect x="0.5" y="0.5" width="307" height="149" rx="15.5" fill="#151b23" stroke="#2a313c"/>
+      <text x="26" y="62" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="36" font-weight="800" fill="url(#g)" letter-spacing="-0.5">~25%</text>
+      <text x="26" y="96" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="16" font-weight="600" fill="#f0f6fc">monthly cloud cost cut</text>
+      <text x="26" y="121" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13.5" fill="#9198a1">moving VMs to managed Azure services</text>
+    </g><g transform="translate(324,0)">
+      <rect x="0.5" y="0.5" width="307" height="149" rx="15.5" fill="#151b23" stroke="#2a313c"/>
+      <text x="26" y="62" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="36" font-weight="800" fill="url(#g)" letter-spacing="-0.5">2023</text>
+      <text x="26" y="96" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="16" font-weight="600" fill="#f0f6fc">National iAward winner</text>
+      <text x="26" y="121" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13.5" fill="#9198a1">with Project Echo, as HMI team lead</text>
+    </g><g transform="translate(648,0)">
+      <rect x="0.5" y="0.5" width="307" height="149" rx="15.5" fill="#151b23" stroke="#2a313c"/>
+      <text x="26" y="62" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="36" font-weight="800" fill="url(#g)" letter-spacing="-0.5">Springer</text>
+      <text x="26" y="96" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="16" font-weight="600" fill="#f0f6fc">published co-author</text>
+      <text x="26" y="121" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13.5" fill="#9198a1">IoT smart restaurant system</text>
+    </g><g transform="translate(972,0)">
+      <rect x="0.5" y="0.5" width="307" height="149" rx="15.5" fill="#151b23" stroke="#2a313c"/>
+      <text x="26" y="62" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="36" font-weight="800" fill="url(#g)" letter-spacing="-0.5">Honours</text>
+      <text x="26" y="96" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="16" font-weight="600" fill="#f0f6fc">B. Software Engineering</text>
+      <text x="26" y="121" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13.5" fill="#9198a1">Deakin University, AI major</text>
+    </g>
+</svg>
