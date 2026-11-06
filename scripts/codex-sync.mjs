@@ -104,6 +104,7 @@ data.levels = levels;
 data.updated = today;
 data.stats = {
   lifetimeTokens: fmtTokens(base.lifetimeTokens + localTotal),
+  todayTokens: (after[today] || 0).toLocaleString("en-US"),
   peakTokens: fmtTokens(peak),
   longestTask: fmtMinutes(longestTask),
   longestStreak: `${longestStreak} day${longestStreak === 1 ? "" : "s"}`,

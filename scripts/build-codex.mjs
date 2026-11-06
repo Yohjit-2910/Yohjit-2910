@@ -1,6 +1,7 @@
 // Renders the "Codex activity" card from data/codex.json.
 // Usage: node scripts/build-codex.mjs   (run from the repo root)
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
+import { createHash } from "node:crypto";
 
 const data = JSON.parse(readFileSync("data/codex.json", "utf8"));
 
@@ -24,7 +25,7 @@ const first = new Date(lastSunday); first.setUTCDate(first.getUTCDate() - 7 * 51
 
 const STATS = [
   [data.stats.lifetimeTokens, "Lifetime tokens"],
-  [data.stats.peakTokens, "Peak tokens"],
+  [data.stats.todayTokens ?? "0", "Today’s tokens"],
   [data.stats.longestTask, "Longest task"],
   [data.stats.longestStreak, "Longest streak"],
   [data.stats.currentStreak, "Current streak"],
@@ -93,6 +94,7 @@ console.log("wrote assets/codex-{dark,light}.svg");
 // can't keep showing an old copy.
 if (existsSync("README.md")) {
   const readme = readFileSync("README.md", "utf8");
-  const next = readme.replace(/assets\/codex-(dark|light)\.svg(\?v=[\w-]*)?/g, `assets/codex-$1.svg?v=${data.updated}`);
+  const version = createHash("sha256").update(JSON.stringify(data)).digest("hex").slice(0, 16);
+  const next = readme.replace(/assets\/codex-(dark|light)\.svg(\?v=[\w-]*)?/g, `assets/codex-$1.svg?v=${version}`);
   if (next !== readme) writeFileSync("README.md", next);
 }
